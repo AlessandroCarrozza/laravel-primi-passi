@@ -17,9 +17,23 @@ Route::get('/', function () {
 
     $title = "Hello World";
 
-    $texts = [
+    $data = [
         "title" => $title,
+
+        "subjects" => [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "VueJS",
+            "API",
+            "Vite",
+            "MySQL",
+            "OOP",
+            "Laravel"
+        ]
+
+
     ];
 
-    return view('home', $texts);
+    return view('home', $data);
 });

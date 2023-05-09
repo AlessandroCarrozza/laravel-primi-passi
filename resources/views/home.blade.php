@@ -8,5 +8,12 @@
 </head>
 <body>
     <h1>{{$title}}</h1>
+
+    <h2>Linguaggi e argomenti trattati:</h2>
+    <ul>
+        @foreach ($subjects as $subject)
+        <li>{{$subject}}</li>
+        @endforeach
+    </ul>
 </body>
 </html>
