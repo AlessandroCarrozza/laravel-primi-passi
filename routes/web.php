@@ -36,4 +36,31 @@ Route::get('/', function () {
     ];
 
     return view('home', $data);
-});
+})->name('home');
+
+
+Route::get('chi-siamo', function () {
+
+    $aboutText = "Questa è la pagina About Us !!";
+
+    $data = [
+        "aboutText" => $aboutText,
+    ];
+
+
+    return view('about', $data);
+})->name('about');
+
+
+
+Route::get('contacts', function () {
+
+    $contactsText = "Questa è la pagina dei Contatti !!";
+
+    $data = [
+        "contactsText" => $contactsText,
+    ];
+
+
+    return view('contacts', $data);
+})->name('contacts');
